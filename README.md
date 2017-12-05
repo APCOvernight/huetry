@@ -6,8 +6,8 @@
 Sentry reporter for HueStatus
 
 ## Features
-- Set your Hue light to "alert" when an unresolved and unassigned issue is found on Sentry
-- Then back to "Ok"
+- Set your Hue light to "alert" when an unresolved and unassigned issue is found on Sentry.
+- Then back to "Ok" when issues are assigned or resolved.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Sentry reporter for HueStatus
 npm install -g huestatus huetry
 ```
 
-Create a .huerc file on your home directory, see [HueStatus Docs](https://www.npmjs.com/package/huestatus) for more info. Add an object like this to the modules array for each of the projects you want to monitor 
+Create a .huerc file on your home directory, see [HueStatus Docs](https://www.npmjs.com/package/huestatus) for more info. Add an object like this to the modules array for each of the projects you want to monitor:
 
 ```js
 {
@@ -28,4 +28,4 @@ Create a .huerc file on your home directory, see [HueStatus Docs](https://www.np
 
 ```
 
-Then run `huestatus`
+Then run `huestatus`, each job will be loaded into HueStatus and your selected light(s) changed accordingly.
