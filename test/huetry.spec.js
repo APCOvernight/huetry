@@ -146,4 +146,14 @@ describe('HueTry Class', function () {
 
     this.clock.restore()
   })
+
+  it('Should throw an error when HueStatus is not found', () => {
+    delete require.cache[require.resolve('requireg')]
+    delete require.cache[require.resolve('../')]
+    const requiregStub = sinon.stub(require('requireg'), 'resolve').throws('Not found')
+
+    expect(() => { require('../') }).to.throw('A HueStatus installation is required -- npm install -g huestatus')
+
+    requiregStub.restore()
+  })
 })

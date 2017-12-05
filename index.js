@@ -1,4 +1,11 @@
-const BaseModule = require('requireg')('huestatus/src/Module')
+let BaseModule
+
+try {
+  BaseModule = require(require('requireg').resolve('huestatus/src/Module'))
+} catch (e) {
+  throw new Error('A HueStatus installation is required -- npm install -g huestatus')
+}
+
 const Sentry = require('sentry-api').Client
 
 class HueTry extends BaseModule {
