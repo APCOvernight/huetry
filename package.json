@@ -10,7 +10,8 @@
     "stryker": "stryker run"
   },
   "dependencies": {
-    "requireg": "^0.1.7"
+    "requireg": "^0.1.7",
+    "sentry-api": "^0.1.1"
   },
   "devDependencies": {
     "apc-style": "^0.4.3",
@@ -52,7 +53,7 @@
   "homepage": "https://github.com/APCOvernight/huetry#readme",
   "nyc": {
     "include": [
-      "src/**/*.js"
+      "index.js"
     ],
     "all": true,
     "watermarks": {

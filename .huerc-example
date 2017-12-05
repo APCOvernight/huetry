@@ -3,5 +3,6 @@
   "sentryApiKey": "3abxxxxxxxxxxxxxxxxx0f5",
   "project": "",
   "organisation": "",
+  "pollInterval": 2000,
   "light": "Hue color lamp 2"
 }
