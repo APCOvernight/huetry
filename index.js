@@ -8,6 +8,10 @@ try {
 
 const Sentry = require('sentry-api').Client
 
+/**
+ * HueStatus Module
+ * @extends BaseModule
+ */
 class HueTry extends BaseModule {
   /**
    * Generate instance name based on project and organisation
@@ -60,7 +64,7 @@ class HueTry extends BaseModule {
    * @return {Promise}
    */
   async _ok () {
-    await this.change('ok', 'No unassigned unresolved issues')
+    return this.change('ok', 'No unassigned unresolved issues')
   }
 
   /**
@@ -69,7 +73,7 @@ class HueTry extends BaseModule {
    * @return {Promise}
    */
   async _alert (issuesCount) {
-    await this.change('alert', `${issuesCount} unassigned unresolved issues`)
+    return this.change('alert', `${issuesCount} unassigned unresolved issues`)
   }
 }
 
