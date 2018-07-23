@@ -14,7 +14,7 @@
     "sentry-api": "^0.1.1"
   },
   "devDependencies": {
-    "apc-style": "1.1.0",
+    "apc-style": "1.2.0",
     "apc-test": "1.1.0"
   },
   "repository": {
