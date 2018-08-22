@@ -10,7 +10,7 @@
     "stryker": "stryker run"
   },
   "dependencies": {
-    "requireg": "^0.1.7",
+    "requireg": "^0.2.1",
     "sentry-api": "^0.1.1"
   },
   "devDependencies": {
